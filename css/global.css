@@ -1,0 +1,190 @@
+/* 公共 */
+body {
+    background-color: #f5f5f5;
+}
+
+.w1200 {
+    width: 1200px;
+}
+
+/* 头部----------------------------------------- */
+.head {
+    height: 60px;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #fff;
+}
+
+/* 头部logo---------------------------------------- */
+.head .eLogo {
+    padding-top: 15px;
+}
+
+/* 头部中间--------------------------------------- */
+.head .e_nav {
+    width: 630px;
+    margin-left: 30px;
+    padding-top: 18px;
+}
+
+.e_nd {
+    position: relative;
+    width: 88px;
+    height: 30px;
+}
+
+.e_nd>a {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #666;
+    z-index: 3;
+}
+
+.e_nd>a.hot {
+    background: url('../img/ujyx_13.jpg') no-repeat right center;
+}
+
+.e_nd.active>a {
+    color: #ff4905;
+}
+
+.e_nd em {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/NavIcoActive.jpg') no-repeat 0 0;
+    background-size: 100% 100%;
+    transform: scale(0.5, 0.5);
+    opacity: 0;
+    animation: pulse 0.5s linear normal forwards;
+}
+
+.e_nd .appLoad {
+    width: 86px;
+    height: 28px;
+    line-height: 28px;
+    color: #ff4905;
+    border: 1px solid #ff4905;
+    border-radius: 6px;
+}
+
+.zg_jpkcx {
+    width: 100px;
+    padding: 9px 0 10px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background: #fff;
+    box-shadow: 0 0 5px #ededed;
+    line-height: 32px;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+    z-index: 10;
+}
+
+.e_nd:hover .zg_jpkcx {
+    display: block;
+}
+
+.zg_jpkcx a {
+    color: #666;
+}
+
+.zg_jpkcx a:hover {
+    color: #fd4b03;
+}
+
+/* 头部右边------------------------------------ */
+.head .eTopRight {
+    width: 320px;
+    padding-top: 19px;
+}
+
+.formSecher {
+    /* width:148px; */
+    width: 28px;
+    height: 28px;
+    transition: all 0.3s;
+}
+
+.eSecher {
+    /* width        : 146px; */
+    width: 26px;
+    height: 26px;
+    border: 1px solid transparent;
+    border-radius: 13px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.eText {
+    border: none;
+    background: none;
+    /* width       : 115px; */
+    width: 0;
+    padding-left: 10px;
+    height: 26px;
+    outline: none;
+    /* 去掉谷歌中的框 */
+    transition: all 0.3s;
+}
+
+.eSub {
+    border: none;
+    width: 17px;
+    height: 17px;
+    background: url('../img/etk_09.jpg') no-repeat;
+    position: absolute;
+    right: 3px;
+    top: 5px;
+}
+
+.eLogin {
+    padding: 8px 5px 0;
+}
+
+.eTopShopCart {
+    padding: 8px 10px 0;
+}
+
+.eLogin a {
+    color: #666;
+}
+
+
+/* 尾部------------------------------------ */
+.foot {
+    height: 86px;
+    padding: 34px;
+    background-color: #404144;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.5, 0.5);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+
+    75% {
+        transform: scale(1.1, 1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}

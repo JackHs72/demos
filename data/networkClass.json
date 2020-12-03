@@ -1,0 +1,132 @@
+[
+    {
+        "title": "互联网营销",
+        "list": [
+            {
+                "href": "play.html",
+                "img": "http://xue.ujiuye.com/uploads_it/2005/QuanGuo/F5T6159327447WOW.jpg?x-oss-process=image/resize,w_285",
+                "name": "平头哥在此",
+                "price": 10000,
+                "hour": 1
+            },
+            {
+                "href": "play.html",
+                "img": "img/F6516670696290IX.jpg",
+                "name": "【直播】【系统】H5+小程序+APP多位一体 Web前端在线系统班",
+                "price": 3999,
+                "hour": 348
+            },
+            {
+                "href": "play.html",
+                "img": "img/F6516670696290IX.jpg",
+                "name": "【直播】【系统】H5+小程序+APP多位一体 Web前端在线系统班",
+                "price": 3999,
+                "hour": 348
+            },
+            {
+                "href": "play.html",
+                "img": "img/F6516670696290IX.jpg",
+                "name": "【直播】【系统】H5+小程序+APP多位一体 Web前端在线系统班",
+                "price": 3999,
+                "hour": 348
+            },
+            {
+                "href": "play.html",
+                "img": "img/F6516670696290IX.jpg",
+                "name": "【直播】【系统】H5+小程序+APP多位一体 Web前端在线系统班",
+                "price": 3999,
+                "hour": 348
+            }
+        ]
+    },
+    {
+        "title": "设计",
+        "list": [
+            {
+                "href": "play.html",
+                "img": "img/F6516670696290IX.jpg",
+                "name": "【直播】【系统】H5+小程序+APP多位一体 Web前端在线系统班",
+                "price": 3999,
+                "hour": 348
+            },
+            {
+                "href": "play.html",
+                "img": "img/F6516670696290IX.jpg",
+                "name": "【直播】【系统】H5+小程序+APP多位一体 Web前端在线系统班",
+                "price": 3999,
+                "hour": 348
+            },
+            {
+                "href": "play.html",
+                "img": "img/F6516670696290IX.jpg",
+                "name": "【直播】【系统】H5+小程序+APP多位一体 Web前端在线系统班",
+                "price": 3999,
+                "hour": 348
+            },
+            {
+                "href": "play.html",
+                "img": "img/F6516670696290IX.jpg",
+                "name": "【直播】【系统】H5+小程序+APP多位一体 Web前端在线系统班",
+                "price": 3999,
+                "hour": 348
+            }
+        ]
+    },
+    {
+        "title": "web前端",
+        "list": [
+            {
+                "href": "play.html",
+                "img": "img/F6516670696290IX.jpg",
+                "name": "【直播】【系统】H5+小程序+APP多位一体 Web前端在线系统班",
+                "price": 3999,
+                "hour": 348
+            },
+            {
+                "href": "play.html",
+                "img": "img/F6516670696290IX.jpg",
+                "name": "【直播】【系统】H5+小程序+APP多位一体 Web前端在线系统班",
+                "price": 3999,
+                "hour": 348
+            },
+            {
+                "href": "play.html",
+                "img": "img/F6516670696290IX.jpg",
+                "name": "【直播】【系统】H5+小程序+APP多位一体 Web前端在线系统班",
+                "price": 3999,
+                "hour": 348
+            }
+        ]
+    },
+    {
+        "title": "程序开发",
+        "list": [
+            {
+                "href": "play.html",
+                "img": "img/F6516670696290IX.jpg",
+                "name": "【直播】【系统】H5+小程序+APP多位一体 Web前端在线系统班",
+                "price": 3999,
+                "hour": 348
+            },
+            {
+                "href": "play.html",
+                "img": "img/F6516670696290IX.jpg",
+                "name": "【直播】【系统】H5+小程序+APP多位一体 Web前端在线系统班",
+                "price": 3999,
+                "hour": 348
+            }
+        ]
+    },
+    {
+        "title": "Office",
+        "list": [
+            {
+                "href": "play.html",
+                "img": "img/F6516670696290IX.jpg",
+                "name": "【直播】【系统】H5+小程序+APP多位一体 Web前端在线系统班",
+                "price": 3999,
+                "hour": 348
+            }
+        ]
+    }
+]

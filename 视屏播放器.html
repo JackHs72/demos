@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        video {
+            width: 500px;
+            /* height: 400px; */
+            /* margin-left: 550px; */
+        }
+    </style>
+</head>
+
+<body>
+    <video src="./video/movie01.mp4" id="video" controls></video>
+    <button id="play">播放</button>
+    <button id="pause">暂停</button>
+    <button id="volume1">加音量</button>
+    <button id="volume2">减音量</button>
+    <button id="currentTime">播放时长</button>
+    <button id="currentTime1">快进</button>
+    <button id="currentTime2">快退</button>
+    <button id="playbackRate">倍速</button>
+    <button id="duration">视屏总时长</button>
+
+    <script>
+        window.onload = function () {
+            // 获取元素
+            var video = document.getElementById('video');
+            var play = document.getElementById('play');
+            var pause = document.getElementById('pause');
+            var volume1 = document.getElementById('volume1');
+            var volume2 = document.getElementById('volume2');
+            var currentTime = document.getElementById('currentTime');
+            var currentTime1 = document.getElementById('currentTime1');
+            var currentTime2 = document.getElementById('currentTime2');
+            var playbackRate = document.getElementById('playbackRate');
+            var duration = document.getElementById("duration");
+
+
+            // 播放
+            play.addEventListener('click', function () {
+                video.play();
+            })
+
+            //暂停
+            // paused 判断播放状态 播放就是true 暂停就是fslse
+            pause.addEventListener('click', function () {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            })
+
+
+            // 加音量
+            volume1.addEventListener("click", function () {
+                var vol = video.volume;
+                vol += 0.1;
+                if (vol > 1) {
+                    vol = 1;
+                }
+                video.volume = vol;
+            })
+
+            // 减音量
+            volume2.addEventListener("click", function () {
+                var vol = video.volume;
+                vol -= 0.1;
+                if (vol < 0) {
+                    vol = 0;
+                }
+                video.volume = vol;
+            })
+
+            // 总时长
+
+            currentTime.addEventListener('click', function () {
+                console.log(video.currentTime);
+            })
+
+            // 快进
+            currentTime1.addEventListener("click", function () {
+                video.currentTime += 3;
+            })
+
+            // 快退
+            currentTime2.addEventListener("click", function () {
+                video.currentTime -= 3;
+            })
+
+            // 倍速
+            playbackRate.addEventListener("click", function () {
+                video.playbackRate += 2;
+            })
+
+            // 视屏总时长
+            duration.addEventListener("click", function () {
+                console.log(video.duration);
+            })
+
+            // 视屏相关的事件
+            /*  ended:视频播放结束触发的事件
+             loadedmetadata:视频（元数据）加载完毕触发的事件
+             timeupdate:视频播放过程中时时触发的事件
+             volumechange:监听音量 */
+
+            video.addEventListener('loadedmetadata', function () {
+                console.log(video.duration);
+            })
+
+            video.addEventListener('timeupdate', function () {
+                // console.log(video.currentTime);
+            })
+
+            video.addEventListener('ended', function () {
+                console.log(11111111);
+            })
+
+            video.addEventListener('volumechange', function () {
+                console.log(video.volume);
+            })
+
+        }
+    </script>
+</body>
+
+</html>

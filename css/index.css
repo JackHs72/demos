@@ -1,0 +1,346 @@
+/* banner --------------------------------------- */
+.banner {
+    width     : 100%;
+    height    : 393px;
+    overflow  : hidden;
+    background: #333;
+}
+
+.banner ul {
+    height: 393px;
+    /* width : 10000px; */
+}
+
+.banner ul li {
+    float : left;
+    height: 393px;
+    /* width : 2000px; */
+}
+
+.banner ul li:nth-child(1) {
+    background: url('../img/rotation01.jpg') no-repeat center top;
+}
+
+.banner ul li:nth-child(2) {
+    background: url('../img/rotation02.jpg') no-repeat center top;
+}
+
+.banner ul li:nth-child(3) {
+    background: url('../img/rotation03.jpg') no-repeat center top;
+}
+
+.banner ul li:nth-child(4) {
+    background: url('../img/rotation04.jpg') no-repeat center top;
+}
+
+.banner ul li:nth-child(5) {
+    background: url('../img/rotation05.jpg') no-repeat center top;
+}
+
+.page {
+    width     : 100%;
+    height    : 10px;
+    left      : 0;
+    bottom    : 20px;
+    text-align: center;
+}
+
+.page span {
+    display       : inline-block;
+    width         : 10px;
+    height        : 10px;
+    margin        : 0 5px;
+    background    : white;
+    border-radius : 50%;
+    vertical-align: top;
+    cursor        : pointer;
+}
+
+.page span.active {
+    background: red;
+}
+
+.leftBtn,
+.rightBtn {
+    position           : absolute;
+    color              : white;
+    /* background-color: rgba(255, 0, 0, 0.3); */
+    width              : 38px;
+    height             : 68px;
+    top                : 160px;
+    text-align         : center;
+    line-height        : 68px;
+    font-size          : 40px !important;
+    font-weight        : bold;
+    cursor             : pointer;
+}
+
+.leftBtn {
+    left: 230px;
+}
+
+.rightBtn {
+    right: 0;
+}
+
+/* banner上导航 */
+.offcn_aside {
+    width      : 230px;
+    height     : 433px;
+    overflow-y : auto;
+    padding-top: 19px;
+    background : rgba(255, 73, 0, 0.8);
+    position   : absolute;
+    top        : -393px;
+}
+
+.offcn_aside a {
+    color: white;
+}
+
+.offcn_aside a:hover {
+    text-decoration: underline;
+}
+
+.offcn_aside dl {
+    margin-bottom: 17px;
+    padding-left : 14px;
+}
+
+.offcn_aside dl dt {
+    line-height: 30px;
+    font-size  : 18px;
+}
+
+.offcn_aside dl dd a {
+    margin-right: 10px;
+}
+
+/*  */
+.zg_banb_parent {
+    height        : 131px;
+    padding-bottom: 10px;
+}
+
+.zg_banb {
+    padding-top   : 20px;
+    padding-bottom: 28px;
+    background    : white;
+}
+
+.zg_banb li {
+    width       : 240px;
+    height      : 81px;
+    text-align  : center;
+    float       : right;
+    border-right: 2px dashed #f1f1f1;
+}
+
+/* 热门直播------------------------------ */
+.zg_zbbt {
+    height: 76px;
+}
+
+.zg_zbbt h3 {
+    line-height: 76px;
+    color      : #333;
+    font-weight: bold;
+    font-size  : 24px;
+}
+
+.zg_zbbt a {
+    height       : 46px;
+    line-height  : 46px;
+    margin-top   : 30px;
+    margin-right : 5px;
+    padding-right: 14px;
+    background   : url('../img/ujyx_07.jpg') no-repeat right center;
+    color        : #999;
+}
+
+.zg_zbbt a:hover {
+    text-decoration: underline;
+    color          : #ff4d00;
+}
+
+.zg_zbbl {
+    width     : 620px;
+    height    : 350px;
+    background: #333;
+}
+
+.zg_zbzt {
+    width  : 100%;
+    height : 100%;
+    display: none;
+}
+
+.zg_zbzt.show {
+    display: block;
+}
+
+.zg_zbzt img {
+    width : 100%;
+    height: 100%;
+}
+
+.zg_zbzt span {
+    position     : absolute;
+    padding      : 0 30px 0 50px;
+    left         : 50%;
+    top          : 50%;
+    transform    : translate(-50%, -50%);
+    height       : 52px;
+    line-height  : 52px;
+    border-radius: 26px;
+    font-size    : 18px;
+    color        : white;
+    background   : rgba(0, 0, 0, 0.5) url('../img/ujyx_19.png') no-repeat 25px center;
+}
+
+.zg_zbzt p {
+
+    position    : absolute;
+    left        : 0;
+    bottom      : 0;
+    width       : 100%;
+    height      : 40px;
+    line-height : 40px;
+    padding-left: 20px;
+    font-size   : 16px;
+    box-sizing  : border-box;
+    color       : #c9c9c9;
+    background  : rgba(0, 0, 0, 0.5);
+}
+
+.zg_zbbr {
+    width     : 580px;
+    height    : 350px;
+    background: white;
+}
+
+.zg_zbbr ul {
+    height    : 100%;
+    padding   : 10px 0;
+    box-sizing: border-box;
+    background: url('../img/ujyx_24.jpg') repeat-y 43px top;
+}
+
+.zg_zbbr ul li {
+    height: 66px;
+    cursor: pointer;
+}
+
+.zg_zbbr ul li.on {
+    background: #fff7f3;
+}
+
+.zg_zbbr ul li.on h6 {
+    color: #ff4d00;
+}
+
+.zg_zbbr ul div {
+    float      : left;
+    width      : 78px;
+    height     : 50px;
+    padding    : 16px 0 0 34px;
+    margin-left: 35px;
+    background : url('../img/ujyx_20.png') no-repeat left center;
+}
+
+.zg_zbbr ul div span {
+    color      : #ff4d00;
+    line-height: 20px;
+}
+
+.zg_zbbr ul div i {
+    color      : #666;
+    font-size  : 16px;
+    line-height: 22px;
+}
+
+.zg_zbbr ul h6 {
+    float      : left;
+    line-height: 66px;
+    font-size  : 16px;
+    color      : #444;
+}
+
+/* 精品网课 */
+.list_title {
+    height     : 72px;
+    margin-left: 60px;
+}
+
+.list_title li {
+    line-height : 80px;
+    font-size   : 16px;
+    color       : #666;
+    margin-right: 25px;
+    cursor      : pointer;
+}
+
+.list_title li.on {
+    color          : #fe4902;
+    text-decoration: underline;
+}
+
+.list_body {
+    margin-right: -20px;
+    display     : none;
+}
+
+.list_body.show {
+    display: block;
+}
+
+.list_body li {
+    width           : 285px;
+    height          : 255px;
+    background-color: white;
+    margin          : 0 20px 22px 0;
+}
+
+.list_body li:hover {
+    transform: translateY(-3px);
+}
+
+.list_body li img {
+    width : 100%;
+    height: 160px;
+}
+
+.list_body li h6 {
+    padding      : 0 10px;
+    margin-bottom: 5px;
+    height       : 45px;
+    line-height  : 45px;
+    font-size    : 14px;
+    overflow     : hidden;
+}
+
+.list_body li h6 a {
+    color: #333;
+}
+
+.list_body li h6 a:hover {
+    text-decoration: underline;
+}
+
+.list_body li p {
+    padding: 0 10px;
+}
+
+.list_body li p span {
+    color    : #ff4d00;
+    font-size: 20px;
+}
+
+.list_body li p i {
+    padding   : 2px 6px;
+    background: #ffefe8;
+    font-size : 14px;
+    color     : #fa7a23;
+    position  : relative;
+    top       : 5px;
+}

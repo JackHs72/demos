@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>自定义播放器</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./css/index1.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="player">
+        <video src="video/movie01.mp4" id="video"></video>
+        <div id="controlBar">
+            <div class="btns">
+                <span class="play"></span>
+                <span class="end"></span>
+            </div>
+            <div class="progress progress-main">
+                <div class="progress-gray"></div>
+                <div class="progress-pink"></div>
+                <div class="progress-slider"></div>
+            </div>
+            <div class="others">
+                <div class="times">
+                    <span class="now">00:00:00</span>
+                    /
+                    <span class="total"> 00:03:58</span>
+                </div>
+                <div class="volumes">
+                    <div class="volumes-btn">
+                        <span></span>
+                    </div>
+                    <div class="progress volumes-progress">
+                        <div class="progress-gray"></div>
+                        <div class="progress-pink"></div>
+                        <div class="progress-slider"></div>
+                    </div>
+                </div>
+                <div class="fullscreen active">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--脚本-->>
+    <script>
+        window.onload = function () {
+            // 获取元素
+            var video = document.getElementById("video");
+
+            // 播放  暂停按钮
+            var playBtn = document.querySelector('.btns .play');
+            var endBtn = document.querySelector('.btns .end');
+
+            // 播放时间和总时间
+            var nowTime = document.querySelector('.others .now');
+            var totalTime = document.querySelector('.others .total');
+
+            // 全屏
+            var fullscreen = document.querySelector('.other .fullscreen');
+
+            // 播放条
+            var progressMain = document.querySelector('.progress-main'); // 灰色进度条
+            var progressPink = document.querySelector('.progress-pink');  // 粉色进度条
+            var progressSlider = document.querySelector('.progress-slider');  // 滑块
+
+            // 声音
+            var volumesBtn = document.querySelector('volumes .volumes-btn');
+
+            // 声音滑动
+            var vProgress = document.querySelector('.volumes-progress');
+            var vProgressPink = document.querySelector('.progress-pink');
+            var vProgressSlidet = document.querySelector('.progress-slider');
+
+            // 视频加载完成  让他回到开始
+            video.addEventListener('loadedmetadata',function (){
+                totalTime.innerHTML = fornmatTime(video.duration)
+            })
+
+            // 播放
+            playBtn.onclick = function () {
+                // 判断视频是否处于暂停状态
+                if(video.paused){
+                    // 播放
+                    video.play();
+                    // 切换played类
+                    this.classList.add('played');
+                }else{
+                    // 暂停
+                    video.pause();
+                    //移除played类
+                    this.classList.remove('played');
+                }
+
+                // 暂停
+                endBtn.onclick = function () {
+                    // 播放的时间为0
+
+                    video.pause();
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

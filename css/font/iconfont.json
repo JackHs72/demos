@@ -1,0 +1,23 @@
+{
+  "id": "1872338",
+  "name": "优学",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5208045",
+      "name": "左",
+      "font_class": "zuo",
+      "unicode": "e6e7",
+      "unicode_decimal": 59111
+    },
+    {
+      "icon_id": "12911878",
+      "name": "右",
+      "font_class": "you",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    }
+  ]
+}
